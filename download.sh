@@ -3,6 +3,7 @@ set -euo pipefail
 
 cd ./rocks
 luarocks download luasystem 0.4.5 --all --lua-version 5.1
+luarocks download busted 2.2.0 --all --lua-version 5.1
 luarocks download lua_cliargs 3.0 --all --lua-version 5.1
 luarocks download dkjson 2.8 --all --lua-version 5.1
 luarocks download say 1.4.1 --all --lua-version 5.1

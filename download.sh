@@ -1,77 +1,79 @@
 #!/usr/bin/env bash
+set -euo pipefail
+
 cd ./rocks
-luarocks download lua_cliargs 3.0 --all
-luarocks download dkjson 2.8 --all
-luarocks download say 1.4.1 --all
-luarocks download luassert 1.9.0 --all
-luarocks download lua-term 0.8 --all
-luarocks download luafilesystem 1.8.0 --all
-luarocks download penlight 1.14.0 --all
-luarocks download mediator_lua 1.1.2 --all
-luarocks download datafile 0.10 --all
-luarocks download classic 0.1.0 --all
-luarocks download lua-resty-template 2.0 --all
-luarocks download lua-resty-http 0.17.2 --all
-luarocks download lua-resty-session 3.10 --all
-luarocks download lua-resty-openssl 1.6.1 --all
-luarocks download lua-resty-jwt 0.2.3 --all
-luarocks download inspect 3.1.1 --all
-luarocks download luasocket 3.1.0 --all
-luarocks download luasec 0.8 --all
-luarocks download luasocket 3.0rc1 --all
-luarocks download penlight 1.5.4 --all
-luarocks download lua-resty-http 0.15 --all
-luarocks download lua-resty-jit-uuid 0.0.7 --all
-luarocks download multipart 0.5.5 --all
-luarocks download version 1.0.1 --all
-luarocks download lpeg 1.1.0 --all
-luarocks download pgmoon 1.10.0 --all
-luarocks download mimetypes 1.1.0 --all
-luarocks download ansicolors 1.0.2 --all
-luarocks download date 2.2.1 --all
-luarocks download etlua 1.3.0 --all
-luarocks download loadkit 1.1.0 --all
-luarocks download kong-lapis 1.7.0.1 --all
-luarocks download lua-cassandra 1.5.0 --all
-luarocks download luatz 0.4 --all
-luarocks download compat53 0.14.4 --all
-luarocks download bit32 5.3.5.1 --all
-luarocks download luaossl 20190731 --all
-luarocks download cqueues 20200726.51 --all
-luarocks download basexx 0.4.1 --all
-luarocks download lpeg_patterns 0.5 --all
-luarocks download binaryheap 0.4 --all
-luarocks download fifo 0.2 --all
-luarocks download http 0.3 --all
-luarocks download lua_system_constants 0.1.3 --all
-luarocks download lyaml 6.2.4 --all
-luarocks download lua-resty-iputils 0.3.0 --all
-luarocks download lualogging 1.8.2 --all
-luarocks download luasyslog 1.0.0 --all
-luarocks download lua_pack 1.0.5 --all
-luarocks download lrandom 20180729 --all
-luarocks download lua-resty-timer 0.3.0 --all
-luarocks download lua-resty-dns-client 4.1.2 --all
-luarocks download lua-resty-worker-events 1.0.0 --all
-luarocks download lua-resty-mediador 0.1.2 --all
-luarocks download lua-resty-healthcheck 1.1.2 --all
-luarocks download lua-resty-cookie 0.1.0 --all
-luarocks download lua-resty-mlcache 2.4.1 --all
-luarocks download lua-resty-counter 0.2.0 --all
-luarocks download kong-plugin-azure-functions 0.4.2 --all
-luarocks download kong-plugin-kubernetes-sidecar-injector 0.2.1 --all
-luarocks download lua-cjson 2.1.0.10 --all
-luarocks download opentracing 0.0.2 --all
-luarocks download kong-plugin-zipkin 0.1.3 --all
-luarocks download kong-plugin-serverless-functions 0.3.1 --all
-luarocks download kong-prometheus-plugin 0.6.0 --all
-luarocks download kong-proxy-cache-plugin 1.2.3 --all
-luarocks download kong-plugin-request-transformer 1.2.8 --all
-luarocks download lua-resty-session 2.24 --all
-luarocks download kong-plugin-session 2.1.2 --all
-luarocks download luacov 0.16.0 --all
-luarocks download luacov-html 1.0.0 --all
-luarocks download lua-resty-openidc 1.7.6 --all
-luarocks download lua-resty-cookie 0.4.0 --all
-luarocks download kong 1.5.1 --all
-luarocks download kong-plugin-ddtrace 0.1.2 --all
+luarocks download lua_cliargs 3.0 --all --lua-version 5.1
+luarocks download dkjson 2.8 --all --lua-version 5.1
+luarocks download say 1.4.1 --all --lua-version 5.1
+luarocks download luassert 1.9.0 --all --lua-version 5.1
+luarocks download lua-term 0.8 --all --lua-version 5.1
+luarocks download luafilesystem 1.8.0 --all --lua-version 5.1
+luarocks download penlight 1.14.0 --all --lua-version 5.1
+luarocks download mediator_lua 1.1.2 --all --lua-version 5.1
+luarocks download datafile 0.10 --all --lua-version 5.1
+luarocks download classic 0.1.0 --all --lua-version 5.1
+luarocks download lua-resty-template 2.0 --all --lua-version 5.1
+luarocks download lua-resty-http 0.17.2 --all --lua-version 5.1
+luarocks download lua-resty-session 3.10 --all --lua-version 5.1
+luarocks download lua-resty-openssl 1.6.1 --all --lua-version 5.1
+luarocks download lua-resty-jwt 0.2.3 --all --lua-version 5.1
+luarocks download inspect 3.1.1 --all --lua-version 5.1
+luarocks download luasocket 3.1.0 --all --lua-version 5.1
+luarocks download luasec 0.8 --all --lua-version 5.1
+luarocks download luasocket 3.0rc1 --all --lua-version 5.1
+luarocks download penlight 1.5.4 --all --lua-version 5.1
+luarocks download lua-resty-http 0.15 --all --lua-version 5.1
+luarocks download lua-resty-jit-uuid 0.0.7 --all --lua-version 5.1
+luarocks download multipart 0.5.5 --all --lua-version 5.1
+luarocks download version 1.0.1 --all --lua-version 5.1
+luarocks download lpeg 1.1.0 --all --lua-version 5.1
+luarocks download pgmoon 1.10.0 --all --lua-version 5.1
+luarocks download mimetypes 1.1.0 --all --lua-version 5.1
+luarocks download ansicolors 1.0.2 --all --lua-version 5.1
+luarocks download date 2.2.1 --all --lua-version 5.1
+luarocks download etlua 1.3.0 --all --lua-version 5.1
+luarocks download loadkit 1.1.0 --all --lua-version 5.1
+luarocks download kong-lapis 1.7.0.1 --all --lua-version 5.1
+luarocks download lua-cassandra 1.5.0 --all --lua-version 5.1
+luarocks download luatz 0.4 --all --lua-version 5.1
+luarocks download compat53 0.14.4 --all --lua-version 5.1
+luarocks download bit32 5.3.5.1 --all --lua-version 5.1
+luarocks download luaossl 20190731 --all --lua-version 5.1
+luarocks download cqueues 20200726.51 --all --lua-version 5.1
+luarocks download basexx 0.4.1 --all --lua-version 5.1
+luarocks download lpeg_patterns 0.5 --all --lua-version 5.1
+luarocks download binaryheap 0.4 --all --lua-version 5.1
+luarocks download fifo 0.2 --all --lua-version 5.1
+luarocks download http 0.3 --all --lua-version 5.1
+luarocks download lua_system_constants 0.1.3 --all --lua-version 5.1
+luarocks download lyaml 6.2.4 --all --lua-version 5.1
+luarocks download lua-resty-iputils 0.3.0 --all --lua-version 5.1
+luarocks download lualogging 1.8.2 --all --lua-version 5.1
+luarocks download luasyslog 1.0.0 --all --lua-version 5.1
+luarocks download lua_pack 1.0.5 --all --lua-version 5.1
+luarocks download lrandom 20180729 --all --lua-version 5.1
+luarocks download lua-resty-timer 0.3.0 --all --lua-version 5.1
+luarocks download lua-resty-dns-client 4.1.2 --all --lua-version 5.1
+luarocks download lua-resty-worker-events 1.0.0 --all --lua-version 5.1
+luarocks download lua-resty-mediador 0.1.2 --all --lua-version 5.1
+luarocks download lua-resty-healthcheck 1.1.2 --all --lua-version 5.1
+luarocks download lua-resty-cookie 0.1.0 --all --lua-version 5.1
+luarocks download lua-resty-mlcache 2.4.1 --all --lua-version 5.1
+luarocks download lua-resty-counter 0.2.0 --all --lua-version 5.1
+luarocks download kong-plugin-azure-functions 0.4.2 --all --lua-version 5.1
+luarocks download kong-plugin-kubernetes-sidecar-injector 0.2.1 --all --lua-version 5.1
+luarocks download lua-cjson 2.1.0.10 --all --lua-version 5.1
+luarocks download opentracing 0.0.2 --all --lua-version 5.1
+luarocks download kong-plugin-zipkin 0.1.3 --all --lua-version 5.1
+luarocks download kong-plugin-serverless-functions 0.3.1 --all --lua-version 5.1
+luarocks download kong-prometheus-plugin 0.6.0 --all --lua-version 5.1
+luarocks download kong-proxy-cache-plugin 1.2.3 --all --lua-version 5.1
+luarocks download kong-plugin-request-transformer 1.2.8 --all --lua-version 5.1
+luarocks download lua-resty-session 2.24 --all --lua-version 5.1
+luarocks download kong-plugin-session 2.1.2 --all --lua-version 5.1
+luarocks download luacov 0.16.0 --all --lua-version 5.1
+luarocks download luacov-html 1.0.0 --all --lua-version 5.1
+luarocks download lua-resty-openidc 1.7.6 --all --lua-version 5.1
+luarocks download lua-resty-cookie 0.4.0 --all --lua-version 5.1
+luarocks download kong 1.5.1 --all --lua-version 5.1
+luarocks download kong-plugin-ddtrace 0.1.2 --all --lua-version 5.1

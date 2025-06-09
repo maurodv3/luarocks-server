@@ -1,0 +1,24 @@
+commands = {}
+modules = {}
+repository = {
+   busted = {
+      ["2.2.0-1"] = {
+         {
+            arch = "rockspec"
+         },
+         {
+            arch = "src"
+         }
+      }
+   },
+   luasystem = {
+      ["0.4.5-1"] = {
+         {
+            arch = "rockspec"
+         },
+         {
+            arch = "src"
+         }
+      }
+   }
+}
